@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinape</title>
+</head>
+<link rel="stylesheet" href="index.css">
+<body>
+
+    <div class="head">
+    <header>
+
+        <nav class="menu-links">
+            <a href="index.html"><li>Home</li></a>
+            <a href="/html/about.html"><li>About</li></a>
+            <a href="/html/news.html"><li>News</li></a>
+            <a href="/html/faqs.html"><li>FAQs</li></a>
+            <a href="/html/products.html"><li>Products</li></a>
+            <a href="/html/inquiry.html"><li>Order</li></a>
+            
+        </nav>
+
+
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <img src="pictures/Curve3.png" width="40%">
+            <p>Baked with love, served with joy.</p>
+        </div>
+
+    </section>
+    </div>
+
+    <h2 class="sweet reveal">Sweet Favorites!</h2>
+
+<div id="Featured" class="reveal">
+    <div class="faves">
+        <div class="faves1 reveal">
+            <h3>Berry Burst</h3>
+            <p>Soft brioche pocket bursting with mixed berry compote and cream cheese. Glazed with berry syrup and fresh mint.</p>
+            <img src="pictures/Berry Burst.jpg">
+        </div>
+
+        <div class="faves1 reveal">
+            <h3>Garlic Galaxy</h3>
+            <p>apart bread where each bulb is stuffed with roasted garlic butter and herbs. Brushed with more garlic butter post-bake.</p>
+            <img src="pictures/Garlic Galaxy.jpg">
+        </div>
+
+        <div class="faves1 reveal">
+            <h3>La Croissant</h3>
+            <p>French laminated dough, now common in artisan Filipino bakeries</p>
+            <img src="pictures/La Croissant.jpg">
+        </div>
+    </div>
+</div>
+
+
+    <div id="baking-section" class="reveal">
+    
+    <div id="arts">
+        <div id="art1" class="reveal">   
+            <img class="art1" src="pictures/artbaking4.png" width="50.4%">
+            <img class="art1" src="pictures/artbaking3.png" width="21.4%">
+        </div>
+
+        <div id="art2" class="reveal">
+            <img src="pictures/artbaking5.png" width="24%">
+            <img src="pictures/artbaking1.png" width="48%">
+        </div>
+    </div>
+
+    <div class="text-content">
+        <h3 class="h3art">The Art of Baking</h3>
+        <p id="pbake" class="reveal">
+            Baking is considered an art because it’s not just about cooking food. 
+            Bakers use their creativity to design how pastries look, taste, and feel. 
+            They choose colors, shapes, and decorations to make the food more attractive. 
+            Baking also involves emotions and meaning, like making cakes for birthdays 
+            or special events. Even if there are rules in baking, people can still 
+            create new ideas and styles. Because of this mix of skill and creativity, 
+            baking is seen as an art form.
+        </p>
+    </div>
+    
+</div>
+
+<div class="chefmac reveal">
+    <p class="reveal">
+        “As a chef, I bake fresh pastries 7 days a week to satisfy every craving. From soft and buttery treats to rich and sweet delights, every bite is made with passion and care. My goal is to turn simple moments into something warm, comforting, and unforgettable.” -Chef Ayeras
+    </p>
+    <img src="pictures/chefmac.png" width="30%" class="reveal">
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(".reveal");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        elements.forEach(el => observer.observe(el));
+    });
+    </script>
+
+    <footer class="footcont">
+        <div class="footnav contacts">
+            <h3>Contacts</h3>
+            <ul>
+                <li>0967 3435 1738</li>
+                <li><a href="mailto:Tinape@gmail.com">Tinape@gmail.com</a></li>
+                <li><a href="#">Tinape.com</a></li>
+            </ul>
+        </div>
+
+        <div class="footnav shop">
+
+            <h3>Shop</h3>
+
+            <ul>
+                <li><a href="/html/about.html">About</a></li>
+                <li><a href="/html/products.html">Products</a></li>
+                <li><a href="/html/news.html">News</a></li>
+                <li><a href="/html/faqs.html">FAQs</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footnav subscribe">
+
+            <h3>STAY UPDATED!</h3>
+
+            <p>Input your email here:</p>
+
+            <input type="text" placeholder="Enter Email">
+            <button>Subscribe</button>
+
+        </div>
+
+        <div class="footnav logo">
+
+            <img src="pictures/logo.png" alt="Logo">
+
+        </div>
+
+        <div class="foot-info">
+            <p>Five people. Two ovens. No backup plan.</p>
+            <p>📍 Biringan City, Philippines</p>
+            <p>🕒 Mon - Fri: 8:00 AM - 6:00 PM | Sat: 9:00 AM - 5:00 PM</p>
+            <p><small><em>*Note: We may close early if we sell out.</em></small></p>
+            <p>Payment: Cash, Gcash, and Card accepted.</p>
+
+        </div>
+
+    </footer>
+    
+
+</body>
+</html>
