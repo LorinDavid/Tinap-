@@ -221,6 +221,7 @@
         background-color: #D6D1B2;
         cursor: pointer;
         margin-top: 10px;
+        cursor: pointer;
     }
 
     @media (max-width: 768px){
