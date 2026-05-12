@@ -8,7 +8,7 @@
 
       
          .head{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url('/pictures/artbaking.png');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url('pictures/artbaking.png');
         height: 15vh; 
         background-position: center;
         background-repeat: no-repeat;
