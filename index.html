@@ -4,84 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tinape</title>
-    <style>
+</head>
+
+<style>
 
     body {
-    background-color: #D6D1B2;
-    padding: 0;
-    margin: 0;
-}
+        background-color: #D6D1B2;
+        padding: 0;
+        margin: 0;
+    }
 
-.head {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url('pictures/artbaking.png');
-    min-height: 60vh; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-
-header {
-    color: white;
-    font-size: 30px;
-    padding: 20px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.menu-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    font-size: 25px;
-    align-items: center;
+    .head {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url('pictures/artbaking.png');
+        min-height: 60vh; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
     
-    background-color: #7B241C;
-    padding: 15px 20px;
-    border-radius: 40px;
-    margin: 0 auto; 
-}
+    header {
+        color: white;
+        font-size: 30px;
+        padding: 20px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .menu-links {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        font-size: 25px;
+        align-items: center;
+        
+        background-color: #7B241C;
+        padding: 15px 20px;
+        border-radius: 40px;
+        margin: 0 auto; 
+    }
+    
+    .menu-links a {
+        text-decoration: none;
+        color: #DDD9BF;
+        padding: 4px 15px;
+        border: 2px solid #DDD9BF;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+    }
+    .menu-links a:hover {
+        background-color: #DDD9BF;
+        color: #484240;
+        transform: scale(1.05);
+    }
 
-.menu-links a {
-    text-decoration: none;
-    color: #DDD9BF;
-    padding: 4px 15px;
-    border: 2px solid #DDD9BF;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-}
-.menu-links a:hover {
-    background-color: #DDD9BF;
-    color: #484240;
-    transform: scale(1.05);
-}
-
-.hero {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #DDD9BF;
-    padding: 20px;
-}
-
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 10px;
-}
-
-.hero-content p {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
+    .hero {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #DDD9BF;
+        padding: 20px;
+    }
+    
+    .hero-content h1 {
+        font-size: 3.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .hero-content p {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
 
 
-@media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
     header {
         flex-direction: column; 
         gap: 20px;
@@ -100,9 +102,9 @@ header {
     .hero-content h1 {
         font-size: 2.5rem;
     }
-}
+    }
 
-@media screen and (max-width: 480px) {
+    @media screen and (max-width: 480px) {
     .head {
         min-height: 50vh;
     }
@@ -210,9 +212,9 @@ header {
         font-size: 28px;
         margin: 0 20px;
     }
-}
+    }
 
-@media screen and (max-width: 480px) {
+    @media screen and (max-width: 480px) {
     .faves1 {
         max-width: 100%;
         padding: 15px;
@@ -227,7 +229,7 @@ header {
         padding: 15px 5px;
         border-radius: 25px;
     }
-}
+    }
     
 
     
@@ -312,9 +314,9 @@ header {
         width: 50%; 
         height: auto;
     }
-}
+    }
 
-@media screen and (max-width: 480px) {
+    @media screen and (max-width: 480px) {
     .h3art {
         font-size: 1.8rem;
     }
@@ -395,9 +397,9 @@ header {
         width: 200px;
         border-radius: 30px;
     }
-}
+    }
 
-@media screen and (max-width: 480px) {
+    @media screen and (max-width: 480px) {
     #baking-section {
         margin-top: 2rem;
     }
@@ -524,7 +526,7 @@ header {
     }
     
 </style>
-</head>
+    
 <body>
 
     <div class="head">
